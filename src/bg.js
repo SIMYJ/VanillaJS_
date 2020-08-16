@@ -2,11 +2,11 @@ const body = document.querySelector("body");
 
 const IMG_NUMBER = 8;
 
-/*
+
 function handleImgLoad(){
     console.log("finshed loading");
 }
-*/
+
 
 
 function paintImage(imgNumber) {
@@ -15,7 +15,7 @@ function paintImage(imgNumber) {
   const image = new Image();
   image.src = `images/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");//class명 지정
-  //image.addEventListener("loadend",handleImgLoad);//API로 받을때 로딩걸림
+  image.addEventListener("loadend",handleImgLoad);//API로 받을때 로딩걸림
   //body.prepend(image);
   body.appendChild(image)//이미지가 다른 위젯를 덮어서 안보임 prepend로 바꿈
 }
