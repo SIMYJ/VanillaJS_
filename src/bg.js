@@ -33,4 +33,4 @@ function init() {
 
 
 init();
-//setInterval(init,5000);
+setInterval(init,5000);
