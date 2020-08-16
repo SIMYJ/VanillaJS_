@@ -13,7 +13,7 @@ function paintImage(imgNumber) {
   //body.prepend("");
   
   const image = new Image();
-  image.src = `raw.githubusercontent.com/YOUN-GJUN/VanillaJS_/gh-pages/Images/${imgNumber + 1}.jpg`;
+  image.src = `Images/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");//class명 지정
   //image.addEventListener("loadend",handleImgLoad);//API로 받을때 로딩걸림
   //body.prepend(image);
